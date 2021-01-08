@@ -1,24 +1,24 @@
-## ethdeploy-cli
+## vapdeploy-cli
 
-A CLI for the [ethdeploy](http://github.com/silentcicero/ethdeploy) Ethereum smart-contract deployment staging facility.
+A CLI for the [vapdeploy](http://github.com/silentcicero/vapdeploy) Vapory smart-contract deployment staging facility.
 
 ## Installation
 
 ```
-npm install -g ethdeploy-cli
+npm install -g vapdeploy-cli
 ```
 
 ## Run
 
 ```
-ethdeploy ./ethdeploy.config.js ./environments.json
+vapdeploy ./vapdeploy.config.js ./environments.json
 ```
 
 ## Example
-First install and run [ethereumjs-testrpc](http://github.com/ethereumjs/ethereumjs-testrpc), then run the example `ethdeploy` cli.
+First install and run [vaporyjs-testrpc](http://github.com/vaporycojs/vaporyjs-testrpc), then run the example `vapdeploy` cli.
 
 ```
-npm install -g ethereumjs-testrpc
+npm install -g vaporyjs-testrpc
 testrpc
 npm run example
 ```
@@ -26,15 +26,15 @@ npm run example
 ## Example CLI Output
 
 ```
-> ethdeploy ./example/ethdeploy.config.js ./example/
+> vapdeploy ./example/vapdeploy.config.js ./example/
 
-ethdeploy [2016-07-29T04:06:44.117Z]:  Environment 'morden' configured, starting contract deployment...
-ethdeploy [2016-07-29T04:06:44.146Z]:  Deploying 'SimpleStore' to environment 'morden'...
-ethdeploy [2016-07-29T04:06:44.682Z]:  Deploying 'SimpleStoreService' to environment 'morden'...
-ethdeploy [2016-07-29T04:06:44.682Z]:  Deploying 'SomeCustomInstance' to environment 'morden'...
-ethdeploy [2016-07-29T04:06:48.734Z]:  All contracts deployed successfully to environment 'morden'!
-ethdeploy-build [2016-07-29T04:06:48.737Z]:  build output file already exists... morphing and modifying with Object.assign...
-ethdeploy-build [2016-07-29T04:06:48.741Z]:  File Generated: './example/environments.json' [modified] successfully!
+vapdeploy [2016-07-29T04:06:44.117Z]:  Environment 'morden' configured, starting contract deployment...
+vapdeploy [2016-07-29T04:06:44.146Z]:  Deploying 'SimpleStore' to environment 'morden'...
+vapdeploy [2016-07-29T04:06:44.682Z]:  Deploying 'SimpleStoreService' to environment 'morden'...
+vapdeploy [2016-07-29T04:06:44.682Z]:  Deploying 'SomeCustomInstance' to environment 'morden'...
+vapdeploy [2016-07-29T04:06:48.734Z]:  All contracts deployed successfully to environment 'morden'!
+vapdeploy-build [2016-07-29T04:06:48.737Z]:  build output file already exists... morphing and modifying with Object.assign...
+vapdeploy-build [2016-07-29T04:06:48.741Z]:  File Generated: './example/environments.json' [modified] successfully!
 
     Details:
       Generation Time: 2016-07-29T04:06:48.741Z
@@ -44,7 +44,7 @@ ethdeploy-build [2016-07-29T04:06:48.741Z]:  File Generated: './example/environm
 ## CLI Inputs
 
 ```
-ethdeploy <config-path> <output-dir-path> [options]
+vapdeploy <config-path> <output-dir-path> [options]
 ```
 
 ## Future/Todo

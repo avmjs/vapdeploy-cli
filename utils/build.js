@@ -11,7 +11,7 @@ const log = function() {
   const args = Array.prototype.slice.call(arguments);
 
   // output console log
-  console.log.apply(console.log, [`ethdeploy-build [${(new Date()).toISOString()}]: `].concat(args));
+  console.log.apply(console.log, [`vapdeploy-build [${(new Date()).toISOString()}]: `].concat(args));
 };
 
 // write build file

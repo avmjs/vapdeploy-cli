@@ -1,9 +1,9 @@
 # ChaneLog
 
-## ethdeploy-cli | 0.0.1
+## vapdeploy-cli | 0.0.1
 
-A CLI module for the ethdepoy Ethereum smart-contract deployment staging utility.
+A CLI module for the vapdeploy Vapory smart-contract deployment staging utility.
 
 ```
-ethdeploy ./ethdeploy.config.js ./environments.json
+vapdeploy ./vapdeploy.config.js ./environments.json
 ```

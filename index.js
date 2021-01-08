@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 'use strict';
 const meow = require('meow');
-const deployer = require('ethdeploy');
+const deployer = require('vapdeploy');
 const writeBuildFile = require('./utils/build');
 
 // throw abstraction for more control
 const throwError = function(error) {
-  throw `ethdeploy-cli ERROR [${(new Date()).toISOString()}]: ${String(error)}`;
+  throw `vapdeploy-cli ERROR [${(new Date()).toISOString()}]: ${String(error)}`;
 };
 
 // log abstraction for more control
@@ -14,16 +14,16 @@ const log = function() {
   const args = Array.prototype.slice.call(arguments);
 
   // output console log
-  console.log.apply(console.log, [`ethdeploy-cli [${(new Date()).toISOString()}]: `].concat(args));
+  console.log.apply(console.log, [`vapdeploy-cli [${(new Date()).toISOString()}]: `].concat(args));
 };
 
 // the cli
 const cli = meow(`
     Usage
-      $ ethdeploy <config-path> <output-dir-path> [options]
+      $ vapdeploy <config-path> <output-dir-path> [options]
 
     Example
-      $ ethdeploy  ./ethdeploy.config.js  ./
+      $ vapdeploy  ./vapdeploy.config.js  ./
 `);
 
 // the config input module and the output path
